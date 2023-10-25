@@ -26,3 +26,16 @@
 .bg_blue {
    background-color: var(--primary-sky-blue, #15B2F5);
 }
+
+.social-icon {
+   ul {
+      display: flex;
+      align-items: center;
+
+      li {
+         &:not(:last-child) {
+            margin-right: 24px;
+         }
+      }
+   }
+}

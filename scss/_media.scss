@@ -65,6 +65,7 @@
          &-form {
             padding: 20px;
             flex-direction: column;
+            align-items: flex-start;
 
             .text {
                margin-bottom: 24px;
@@ -81,6 +82,20 @@
                      padding: 8px;
                   }
                }
+            }
+         }
+
+         &-middle {
+            flex-direction: column;
+
+            .left {
+               margin-bottom: 30px;
+            }
+
+            .right {
+               justify-content: space-between;
+               width: 100%;
+               column-gap: unset;
             }
          }
       }

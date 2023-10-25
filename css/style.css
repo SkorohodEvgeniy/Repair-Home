@@ -32,6 +32,14 @@
   background-color: var(--primary-sky-blue, #15B2F5);
 }
 
+.social-icon ul {
+  display: flex;
+  align-items: center;
+}
+.social-icon ul li:not(:last-child) {
+  margin-right: 24px;
+}
+
 /*Reset*/
 *,
 *::after,
@@ -135,6 +143,7 @@ body {
   padding: 52px 0 74px;
 }
 .footer__content-form {
+  margin-bottom: 52px;
   padding: 24px;
   border-radius: 24px;
   background: #4AC9FF;
@@ -176,6 +185,50 @@ body {
   background: var(--primary-sky-blue, #15B2F5);
   padding: 8px 24px;
   color: var(--neutural-white);
+}
+.footer__content-middle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer__content-middle .left {
+  max-width: 460px;
+  width: 100%;
+}
+.footer__content-middle .left .footer__logo,
+.footer__content-middle .left .text {
+  margin-bottom: 32px;
+}
+.footer__content-middle .left .text {
+  color: var(--neutural-white);
+}
+.footer__content-middle .right {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 102px;
+       column-gap: 102px;
+}
+.footer__content-middle .right .title {
+  margin-bottom: 24px;
+  color: var(--neutural-white, #FFF);
+  font-family: Plus Jakarta Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 133.333% */
+}
+.footer__content-middle .right ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer__content-middle .right ul li a {
+  color: var(--neutural-white, #FFF);
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  /* 160% */
 }
 .footer__copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -229,6 +282,7 @@ body {
   .footer__content-form {
     padding: 20px;
     flex-direction: column;
+    align-items: flex-start;
   }
   .footer__content-form .text {
     margin-bottom: 24px;
@@ -242,6 +296,18 @@ body {
   }
   .footer__content-form .form_container input {
     padding: 8px;
+  }
+  .footer__content-middle {
+    flex-direction: column;
+  }
+  .footer__content-middle .left {
+    margin-bottom: 30px;
+  }
+  .footer__content-middle .right {
+    justify-content: space-between;
+    width: 100%;
+    -moz-column-gap: unset;
+         column-gap: unset;
   }
 }
 @media screen and (max-width: 375px) {
