@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap");
+/*Reset*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 137%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #fff;
+  color: #919191;
+}
+
+._container__big {
+  max-width: 1690px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+._container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+._container__small {
+  max-width: 810px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
