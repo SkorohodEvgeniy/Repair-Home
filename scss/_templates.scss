@@ -1,0 +1,28 @@
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+
+.block {
+   &__title {
+      color: var(--neutural-black, #171921);
+      font-family: Plus Jakarta Sans;
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px;
+      margin-bottom: 24px;
+   }
+
+   &__subtitle {}
+}
+
+.bg_dark-blue {
+   background-color: var(--primary-dark-blue-1, #142257);
+}
+
+.bg_blue {
+   background-color: var(--primary-sky-blue, #15B2F5);
+}

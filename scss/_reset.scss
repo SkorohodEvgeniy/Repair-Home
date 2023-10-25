@@ -38,29 +38,17 @@ h6 {
 html,
 body {
    height: 100%;
-   line-height: 137%;
+   line-height: 160%;
    font-family: 'Plus Jakarta Sans', sans-serif;
    font-weight: 400;
    font-style: normal;
    font-size: 18px;
    background-color: #fff;
-   color: #919191;
+   color: var(--neutural-grey-1, #545971);
 }
 
-._container__big {
-   max-width: 1690px;
+.container {
+   max-width: 1484px;
    margin: 0 auto;
-   padding: 0 15px;
-}
-
-._container {
-   max-width: 1210px;
-   margin: 0 auto;
-   padding: 0 15px;
-}
-
-._container__small {
-   max-width: 810px;
-   margin: 0 auto;
-   padding: 0 15px;
+   padding: 0 24px;
 }

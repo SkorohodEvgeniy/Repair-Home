@@ -1,4 +1,136 @@
 @import '_fonts';
+@import '_var';
+@import '_templates';
 @import '_reset';
+
+.block {
+   &__menu {
+      display: flex;
+      align-items: center;
+      padding: 24px 160px;
+
+      &-nav {
+         display: flex;
+         align-items: center;
+         width: 100%;
+
+         .nav-logo {
+            padding: 23px;
+            border-bottom: 1px solid var(--primary-dark-blue-2, #1F3584);
+         }
+
+         nav {
+            margin: 0 auto;
+
+            ul {
+               display: flex;
+               align-items: center;
+
+               li {
+                  a {
+                     color: var(--neutural-white);
+                     font-weight: 700;
+                  }
+
+                  &:not(:last-child) {
+                     margin-right: 57px;
+                  }
+               }
+            }
+         }
+
+      }
+
+      &-service {
+         display: flex;
+         align-items: center;
+
+         svg {
+            margin-right: 10px;
+         }
+
+         a {
+            color: var(--neutural-white);
+            font-weight: 700;
+         }
+      }
+
+      &-burger {
+         z-index: 10;
+
+         svg {
+            path {
+               stroke: var(--neutural-white);
+            }
+         }
+      }
+   }
+}
+
+.footer {
+   &__content {
+      padding: 52px 0 74px;
+
+      &-form {
+         padding: 24px;
+         border-radius: 24px;
+         background: #4AC9FF;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         .text {
+            .title {
+               color: var(--neutural-white, #FFF);
+               font-family: Plus Jakarta Sans;
+               font-size: 24px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: 32px;
+               margin-bottom: 12px;
+            }
+
+            .subtitle {
+               color: var(--neutural-white, #FFF);
+               font-family: Plus Jakarta Sans;
+               font-size: 18px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 28px;
+               /* 155.556% */
+            }
+         }
+
+         .form {
+            &_container {
+               padding: 12px;
+               background-color: var(--neutural-white);
+               border-radius: 60px;
+               display: flex;
+               align-items: center;
+
+               input {
+                  background-color: transparent;
+                  padding: 8px 12px;
+
+                  &[type="submit"] {
+                     border-radius: 60px;
+                     background: var(--primary-sky-blue, #15B2F5);
+                     padding: 8px 24px;
+                     color: var(--neutural-white);
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   &__copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.30);
+      padding: 24px 32px;
+      color: var(--neutural-white);
+      text-align: center
+   }
+}
 
 @import '_media';
