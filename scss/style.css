@@ -23,6 +23,7 @@
   line-height: 64px;
   margin-bottom: 24px;
 }
+
 .bg_dark-blue {
   background-color: var(--primary-dark-blue-1, #142257);
 }
@@ -429,7 +430,7 @@ body {
     top: 75px;
     left: 0;
     height: 100%;
-    background-color: #2E3F7D;
+    background-color: #fff;
   }
   .block__menu-nav nav ul {
     display: flex;
@@ -484,4 +485,4 @@ body {
 }
 .open {
   display: flex;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -5,6 +5,12 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
    <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,9 +21,6 @@
             <img src="img/svg/logo.svg" alt="logo">
          </div>
          <div class="block__menu-nav">
-            <div class="block__menu-logo nav-logo">
-               <img src="img/svg/logo.svg" alt="logo">
-            </div>
             <nav>
                <ul>
                   <li><a href="#">About Us</a></li>
@@ -35,13 +38,145 @@
          </div>
 
          <div class="block__menu-burger">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-               <path d="M3.76367 12H21.7637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-               <path d="M3.76367 6H21.7637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-               <path d="M3.76367 18H21.7637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <span></span>
          </div>
       </div>
+      <section>
+         <div class="first__screen bg_dark-blue">
+            <div class="first__screen-left">
+               <img src="img/main-l.jpg" alt="main-l">
+               <svg xmlns="http://www.w3.org/2000/svg"  height="45" viewBox="0 0 479 45" fill="none">
+                  <path
+                     d="M433.92 5.87463C429.555 2.086 423.969 1.52588e-05 418.189 1.52588e-05H-2.5V45H479L433.92 5.87463Z"
+                     fill="white" />
+               </svg>
+            </div>
+            <div class="first__screen-middle">
+               <div class="content">
+                  <div class="content_up">
+                     <ul>
+                        <li>Maintenances </li>
+                        <li>Repairs </li>
+                        <li>Improvements</li>
+                     </ul>
+                     <h1 class="main_title">Need improvement or repair your home? we can help!</h1>
+                     <div class="check">
+                        <ul>
+                           <li>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                 fill="none">
+                                 <path d="M20.5 6L9.5 17L4.5 12" stroke="#15B2F5" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                              <div class="text">Free Quotes</div>
+                           </li>
+                           <li>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                 fill="none">
+                                 <path d="M20.5 6L9.5 17L4.5 12" stroke="#15B2F5" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                              <div class="text">100% Commitment-Free </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="main_btn">
+                        <a href="#">Call Us Now
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                 fill="none">
+                                 <path
+                                    d="M22.4999 16.9201V19.9201C22.5011 20.1986 22.444 20.4743 22.3325 20.7294C22.2209 20.9846 22.0572 21.2137 21.852 21.402C21.6468 21.5902 21.4045 21.7336 21.1407 21.8228C20.8769 21.912 20.5973 21.9452 20.3199 21.9201C17.2428 21.5857 14.2869 20.5342 11.6899 18.8501C9.27376 17.3148 7.22527 15.2663 5.68993 12.8501C3.99991 10.2413 2.94818 7.27109 2.61993 4.1801C2.59494 3.90356 2.62781 3.62486 2.71643 3.36172C2.80506 3.09859 2.9475 2.85679 3.1347 2.65172C3.32189 2.44665 3.54974 2.28281 3.80372 2.17062C4.05771 2.05843 4.33227 2.00036 4.60993 2.0001H7.60994C8.09524 1.99532 8.56573 2.16718 8.9337 2.48363C9.30167 2.80008 9.54201 3.23954 9.60994 3.7201C9.73656 4.68016 9.97139 5.62282 10.3099 6.5301C10.4445 6.88802 10.4736 7.27701 10.3938 7.65098C10.3141 8.02494 10.1288 8.36821 9.85994 8.6401L8.58994 9.9101C10.0135 12.4136 12.0864 14.4865 14.5899 15.9101L15.8599 14.6401C16.1318 14.3712 16.4751 14.1859 16.8491 14.1062C17.223 14.0264 17.612 14.0556 17.9699 14.1901C18.8772 14.5286 19.8199 14.7635 20.7799 14.8901C21.2657 14.9586 21.7093 15.2033 22.0265 15.5776C22.3436 15.9519 22.5121 16.4297 22.4999 16.9201Z"
+                                    fill="#15B2F5" />
+                              </svg>
+                           </span>
+
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="lists_icons">
+                  <ul>
+                     <li>
+                        <div class="icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M10.5752 2.94625C11.3586 2.15104 12.6414 2.15104 13.4248 2.94625L14.4681 4.00535C14.8477 4.39062 15.367 4.60576 15.9078 4.60171L17.3945 4.59058C18.5108 4.58222 19.4178 5.48924 19.4094 6.60549L19.3983 8.09215C19.3942 8.63295 19.6094 9.15234 19.9947 9.53188L21.0537 10.5752C21.849 11.3586 21.849 12.6414 21.0537 13.4248L19.9947 14.4681C19.6094 14.8477 19.3942 15.367 19.3983 15.9078L19.4094 17.3945C19.4178 18.5108 18.5108 19.4178 17.3945 19.4094L15.9078 19.3983C15.367 19.3942 14.8477 19.6094 14.4681 19.9947L13.4248 21.0537C12.6414 21.849 11.3586 21.849 10.5752 21.0537L9.53188 19.9947C9.15234 19.6094 8.63295 19.3942 8.09215 19.3983L6.60549 19.4094C5.48924 19.4178 4.58222 18.5108 4.59058 17.3945L4.60171 15.9078C4.60576 15.367 4.39062 14.8477 4.00535 14.4681L2.94625 13.4248C2.15104 12.6414 2.15104 11.3586 2.94625 10.5752L4.00535 9.53188C4.39062 9.15234 4.60576 8.63295 4.60171 8.09215L4.59058 6.60549C4.58222 5.48924 5.48924 4.58222 6.60549 4.59058L8.09215 4.60171C8.63295 4.60576 9.15234 4.39062 9.53188 4.00535L10.5752 2.94625Z"
+                                 stroke="white" stroke-width="2" />
+                              <path d="M16 10L11.625 14L9 12.1176" stroke="white" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="text">
+                           Satisfaction<br> Guarantee
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                 stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="text">
+                           24H<br>Availability
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M21 10C21 15.1225 16.1804 19.7095 13.595 21.8016C12.6535 22.5634 11.3464 22.5634 10.405 21.8016C7.81961 19.7095 3 15.1225 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                 stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                 d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                                 stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="text">
+                           Local US<br>Professional
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none">
+                              <path
+                                 d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                                 stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M15 14L11.875 18L10 16.1176" stroke="white" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M16 2V6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path d="M8 2V6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                              <path d="M3 10H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="text">
+                           Flexible <br>Appointments
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="first__screen-right">
+               <img src="img/main-r.jpg" alt="main-r">
+               <svg xmlns="http://www.w3.org/2000/svg"  height="45" viewBox="0 0 484 45" fill="none">
+                  <path
+                     d="M45.0801 5.87458C49.4453 2.08596 55.0312 -2.6145e-05 60.8113 -2.56397e-05L485 1.52588e-05L485 45L0 45L45.0801 5.87458Z"
+                     fill="white" />
+               </svg>
+            </div>
+         </div>
+      </section>
       <footer class="footer bg_blue">
          <div class="footer__content">
             <div class="container">
@@ -143,3 +278,4 @@
 </body>
 
 </html>
+

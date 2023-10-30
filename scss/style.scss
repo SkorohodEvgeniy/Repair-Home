@@ -1,5 +1,4 @@
 @import '_fonts';
-@import '_var';
 @import '_templates';
 @import '_reset';
 
@@ -8,6 +7,10 @@
       display: flex;
       align-items: center;
       padding: 24px 160px;
+
+      &-logo {
+         z-index: 50;
+      }
 
       &-nav {
          display: flex;
@@ -57,10 +60,218 @@
 
       &-burger {
          z-index: 10;
+         display: flex;
+         flex-direction: column;
+         row-gap: 5px;
 
-         svg {
-            path {
-               stroke: var(--neutural-white);
+         span {
+            width: 24px;
+            height: 2px;
+            background-color: var(--neutural-white);
+            display: inline-block;
+
+         }
+
+         &:before,
+         &:after {
+            display: inline-block;
+            content: '';
+            width: 24px;
+            height: 2px;
+            background-color: var(--neutural-white);
+         }
+      }
+   }
+}
+
+.first__screen {
+   display: grid;
+   grid-template-columns: auto 1fr auto;
+   position: relative;
+
+   &-left,
+   &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      img {
+         border-radius: 24px;
+         margin-bottom: 16px;
+      }
+
+   }
+
+   &-left {
+      img {
+         padding-left: 16px;
+      }
+
+   }
+
+   &-right {
+      img {
+         padding-right: 16px;
+      }
+
+   }
+
+   &-middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+
+      .content {
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         &_up {
+            ul {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               margin-bottom: 24px;
+
+               li {
+                  color: var(--neutural-grey-3, #9EA3B5);
+                  font-feature-settings: 'liga' off;
+                  font-family: Plus Jakarta Sans;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 28px;
+                  display: flex;
+                  align-items: center;
+
+                  &:not(:last-child):after {
+                     content: '';
+                     width: 5px;
+                     height: 5px;
+                     display: inline-block;
+                     margin: 0 14px;
+                     background-color: #9EA3B5;
+                     border-radius: 50%;
+                  }
+               }
+            }
+
+            .main {
+               &_title {
+                  color: var(--neutural-white, #FFF);
+                  text-align: center;
+                  font-family: Plus Jakarta Sans;
+                  font-size: 64px;
+                  font-style: normal;
+                  font-weight: 800;
+                  line-height: 76px;
+                  max-width: 671px;
+                  width: 100%;
+                  margin: 0 auto;
+                  margin-bottom: 24px;
+               }
+
+               &_btn {
+                  text-align: center;
+                  margin-bottom: 87px;
+
+                  a {
+                     color: var(--neutural-white, #FFF);
+                     font-family: Plus Jakarta Sans;
+                     font-size: 24px;
+                     font-style: normal;
+                     font-weight: 700;
+                     line-height: 32px;
+                     border-radius: 60px;
+                     background: var(--primary-sky-blue, #15B2F5);
+                     padding: 18px;
+
+                     span {
+                        background-color: #FFF;
+                        width: 48px;
+                        height: 48px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        margin-left: 16px;
+                     }
+
+                     /* 133.333% */
+                  }
+               }
+            }
+
+
+            .check {
+               margin-bottom: 48px;
+
+               ul {
+                  li {
+                     color: var(--primary-sky-blue, #15B2F5);
+                     font-feature-settings: 'liga' off;
+                     font-family: Plus Jakarta Sans;
+                     font-size: 20px;
+                     font-style: normal;
+                     font-weight: 400;
+                     line-height: 32px;
+                     display: flex;
+                     align-items: center;
+
+                     svg {
+                        margin-right: 8px;
+                     }
+
+                     /* 160% */
+                     &::after {
+                        content: none;
+                     }
+
+                     &:not(:last-child) {
+                        margin-right: 41px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .lists {
+         &_icons {
+            margin-bottom: 87px;
+
+            ul {
+               display: grid;
+               grid-template-columns: repeat(4, 1fr);
+               padding: 0 95px;
+
+               li {
+                  display: flex;
+                  align-items: center;
+
+                  .icon {
+                     border-radius: 999px;
+                     background: var(--primary-dark-blue-2, #1F3584);
+                     padding: 12px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     margin-right: 16px;
+                  }
+
+                  .text {
+                     color: var(--neutural-white, #FFF);
+                     font-family: Plus Jakarta Sans;
+                     font-size: 18px;
+                     font-style: normal;
+                     font-weight: 600;
+                     line-height: 24px;
+                     /* 133.333% */
+                  }
+
+               }
             }
          }
       }
@@ -190,4 +401,10 @@
    }
 }
 
+
+
 @import '_media';
+
+.open {
+   display: flex;
+}
