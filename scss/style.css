@@ -430,7 +430,7 @@ body {
     top: 75px;
     left: 0;
     height: 100%;
-    background-color: #fff;
+    background-color: #1F3584;
   }
   .block__menu-nav nav ul {
     display: flex;
@@ -485,4 +485,5 @@ body {
 }
 .open {
   display: flex;
+  z-index: 50;
 }/*# sourceMappingURL=style.css.map */
