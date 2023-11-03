@@ -13,6 +13,19 @@
    min-height: 100%;
 }
 
+.dflex {
+   display: flex;
+   align-items: center;
+}
+
+.p_120_0 {
+   padding: 120px 0;
+}
+
+.p_64_0 {
+   padding: 64px 0;
+}
+
 .block {
    &__title {
       color: var(--neutural-black, #171921);
@@ -44,5 +57,28 @@
             margin-right: 24px;
          }
       }
+   }
+}
+
+.main {
+   &__title {
+      color: var(--neutural-black, #171921);
+      font-family: Plus Jakarta Sans;
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px;
+      /* 123.077% */
+   }
+
+   &__subtitle {
+      color: var(--neutural-grey-1, #545971);
+      font-feature-settings: 'liga' off;
+      font-family: Plus Jakarta Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      /* 155.556% */
    }
 }
