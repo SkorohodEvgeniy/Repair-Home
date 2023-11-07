@@ -82,3 +82,67 @@
       /* 155.556% */
    }
 }
+
+/* Accordion*/
+
+.accordion__text {
+   color: #737373;
+   font-feature-settings: 'ss01' on;
+   font-family: Be Vietnam;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   /* 150% */
+   display: none;
+   margin-top: 16px;
+}
+
+.accordion__title {
+   color: var(--neutural-grey-1, #545971);
+   font-family: Plus Jakarta Sans;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 32px;
+   /* 133.333% */
+   position: relative;
+   cursor: pointer;
+}
+
+/* Accordion arrow*/
+.accordion__title::before,
+.accordion__title::after {
+   content: "";
+   width: 10px;
+   height: 1px;
+   background-color: #1F3584;
+   position: absolute;
+   top: 8px;
+   transition: all 0.3s ease 0s;
+}
+
+.accordion__title::before {
+   transform: rotate(-40deg);
+   right: 0;
+}
+
+.accordion__title::after {
+   transform: rotate(40deg);
+   right: 8px;
+}
+
+.accordion__title.active::before {
+   transform: rotate(40deg);
+}
+
+.accordion__title.active::after {
+   transform: rotate(-40deg);
+}
+
+.accordion__block {
+   padding: 24px 32px;
+   border-radius: 12px;
+}
+
+/* Accordion END*/

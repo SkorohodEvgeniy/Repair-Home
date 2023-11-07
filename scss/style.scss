@@ -411,6 +411,261 @@
          }
       }
    }
+
+   &__reviews {
+      padding: 132px 0;
+
+      .reviews {
+         max-width: 986px;
+         width: 100%;
+         margin: 0 auto;
+         position: relative;
+
+         &__title {
+            text-align: center;
+            margin-bottom: 66px;
+         }
+
+         .review {
+
+            margin: 0 100px;
+            margin-bottom: 60px;
+
+            &__text {
+               text-align: center;
+               color: var(--neutural-grey-1, #545971);
+               font-family: Plus Jakarta Sans;
+               font-size: 20px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 32px;
+               padding: 40px 0;
+            }
+
+            &__logo {
+               border-bottom: 1px solid rgba(203, 207, 219, 0.5);
+               padding: 24px 0;
+
+               img {
+                  margin: 0 auto;
+               }
+            }
+
+            &__star {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               .icon {
+                  margin-right: 32px;
+               }
+
+               .name {
+                  color: var(--neutural-black, #171921);
+                  font-family: Plus Jakarta Sans;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 32px;
+                  /* 133.333% */
+               }
+            }
+         }
+
+         #next,
+         #prev {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--neutural-soft-grey, #E3E6F0);
+            transition: all .5s ease-in-out;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 51;
+
+            &:hover {
+               background: var(--primary-sky-blue, #15B2F5);
+            }
+         }
+
+         #next {
+            right: 0;
+         }
+
+
+      }
+
+      .arrow__btns {
+         .slick {
+            &-dots {
+               display: flex !important;
+               justify-content: center;
+               align-items: center;
+
+               li {
+                  width: 12px;
+                  height: 12px;
+                  background-color: #E3E6F0;
+                  border-radius: 50%;
+                  cursor: pointer;
+
+                  &:not(:last-child) {
+                     margin-right: 12px;
+                  }
+
+                  &.slick-active {
+                     width: 40px;
+                     background-color: #15B2F5;
+                     border-radius: 24px;
+                  }
+
+                  button {
+                     font-size: 0;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   &__article {
+      .title__article {
+         margin-bottom: 24px;
+         text-align: center;
+      }
+
+      .subtitle__article {
+         text-align: center;
+      }
+
+      .articles {
+         padding: 56px 0;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         column-gap: 48px;
+
+         .article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-content {
+               padding: 24px 0;
+               height: 100%;
+
+               .time {
+                  a {
+                     overflow: hidden;
+                     color: #545971;
+                     font-size: 18px;
+                     font-style: normal;
+                     font-weight: 400;
+                     line-height: 28px;
+                  }
+
+               }
+
+               .title {
+                  padding: 16px 0;
+                  color: var(--neutural-black, #171921);
+                  font-family: Plus Jakarta Sans;
+                  font-size: 32px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 40px;
+                  /* 125% */
+               }
+            }
+
+            &-tag {
+               ul {
+                  display: flex;
+                  align-items: center;
+                  column-gap: 12px;
+
+                  li {
+                     a {
+                        border-radius: 999px;
+                        background: var(--neutural-light-grey, #F3F5F9);
+                        color: var(--neutural-grey-1, #545971);
+                        text-align: center;
+                        font-family: Plus Jakarta Sans;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 20px;
+                        padding: 8px 16px;
+                        /* 142.857% */
+                     }
+                  }
+               }
+            }
+         }
+
+
+      }
+
+      .btn__more {
+         text-align: center;
+         margin-bottom: 118px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         a {
+            color: var(--primary-sky-blue, #15B2F5);
+            font-family: Plus Jakarta Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+         }
+      }
+   }
+
+   &__accordion {
+      display: grid;
+      grid-template-columns: 468px 1fr;
+      column-gap: 80px;
+      padding-bottom: 130px;
+
+
+      &-left {
+         .title__accordion {
+            margin-bottom: 12px;
+         }
+
+         p {
+            color: var(--neutural-black, #171921);
+            /* Body/20 */
+            font-family: Plus Jakarta Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 160% */
+         }
+
+         a {
+            color: var(--primary-sky-blue, #15B2F5);
+            font-family: Plus Jakarta Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            /* 133.333% */
+            text-decoration-line: underline;
+         }
+      }
+
+      &-right {}
+   }
 }
 
 .first__screen {
