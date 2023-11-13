@@ -10,11 +10,76 @@
    }
 }
 
+@media screen and (max-width:1200px) {
+   .first {
+      &__screen {
+         grid-template-columns: 1fr;
+         padding: 60px 0;
+
+         &-left,
+         &-right {
+            display: none;
+         }
+
+         &-middle {
+            .content_up {
+
+               .main_title {
+                  max-width: 100%;
+               }
+            }
+         }
+      }
+   }
+
+   .block {
+      &__second {
+         &-left {
+            .lists {
+               ul {
+                  li {
+                     text-align: start;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
 @media screen and (max-width: 1140px) {
    .block {
       &__menu {
          padding-left: 24px;
          padding-right: 24px;
+      }
+   }
+}
+
+@media screen and (max-width:1024px) {
+   .block {
+
+      &__accordion,
+      &__five {
+         grid-template-columns: 1fr;
+         row-gap: 50px;
+      }
+
+      &__five {
+         text-align: center;
+      }
+
+      &__talk {
+         margin: 0 auto;
+         text-align: center;
+
+         .lists {
+            justify-content: center;
+         }
+
+         .talk-btn {
+            text-align: center;
+         }
       }
    }
 }
@@ -60,6 +125,68 @@
 }
 
 @media screen and (max-width:768px) {
+   .first {
+      &__screen {
+         &-middle {
+            .lists_icons {
+               ul {
+                  grid-template-columns: 1fr 1fr;
+                  row-gap: 25px;
+                  padding: 0 20px;
+               }
+            }
+
+            .content_up {
+               ul {
+                  flex-direction: column;
+               }
+
+               .main_title {
+                  font-size: 35px;
+                  line-height: 50px;
+               }
+            }
+         }
+      }
+   }
+
+   .block {
+      &__article {
+         .articles {
+            grid-template-columns: 1fr;
+         }
+      }
+
+      &__second {
+         grid-template-columns: 1fr;
+
+         &-svg {
+            display: none;
+         }
+      }
+
+      &__third {
+         &-lists {
+            ul {
+               grid-template-columns: 1fr;
+            }
+         }
+      }
+
+      &__four {
+         &-title {
+            flex-wrap: wrap;
+         }
+
+         &-lists {
+            ul {
+               grid-template-columns: 1fr;
+            }
+         }
+
+      }
+   }
+
    .footer {
       &__content {
          &-form {
@@ -103,6 +230,16 @@
 }
 
 @media screen and (max-width:375px) {
+   .block {
+      &__icon {
+
+         &-left,
+         &-right {
+            display: none;
+         }
+      }
+   }
+
    .footer {
       .form {
          &_container {
